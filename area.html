@@ -73,7 +73,7 @@
                         var b = Number(angleB.value)
                         var c = Number(angleC.value)
                         var s = (a+b+c)/2;
-                        var area = (Math.sqrt(s*((s-a)*(s-b)*(s-c))));
+                        var area = (Math.sqrt(Math.abs(s*((s-a)*(s-b)*(s-c)))));
                         area = area.toFixed(2)
                         arearesult.innerHTML = "Area of Triangle by herons formula is " + area;
             })
